@@ -42,7 +42,7 @@ gcc -o "$BASENAME.o" "$C_FILE" $LIBRARIES
 
 
 if [[ $? -eq 0 ]]; then
-    ./"$BASENAME" $PARAMETERS
+    ./"$BASENAME.o" $PARAMETERS
 else
     echo "Compilation failed."
     exit 1
